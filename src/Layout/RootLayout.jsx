@@ -12,6 +12,7 @@ export const RootLayout = () => {
   const toggleTheme = () => {
     setDarkMode((previous) => !previous);
   };
+
   return (
     <div
       style={{
@@ -95,4 +96,3 @@ export const RootLayout = () => {
     </div>
   );
 };
-                                                              

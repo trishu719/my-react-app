@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+/* import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import AllRoutes from './Routes/AllRoutes';
 function App() {
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; */

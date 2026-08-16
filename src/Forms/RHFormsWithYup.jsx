@@ -79,7 +79,7 @@ export const schema = yup.object({
         .oneOf([true], "Accept Terms & Conditions")
 });
 
-export default RHFormsWithYup = ()=> {
+export const  RHFormsWithYup = ()=> {
     const [loading, setLoading] = useState(false);
 
     const {

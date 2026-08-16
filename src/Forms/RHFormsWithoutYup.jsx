@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import { useState } from "react";
+
+
 export const RHFormsWithoutYup = () => {
     const {
         register,
@@ -392,6 +394,5 @@ export const RHFormsWithoutYup = () => {
                 </div>
             </div>
         </div>
-                );
+    );
 }
-

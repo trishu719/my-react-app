@@ -6,22 +6,18 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),babel({ presets: [reactCompilerPreset()] })],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        silenceDeprecations:[
-          'import',
-          'if-function',
-          'global-builtin',
-          'color-functions',
-        ],
-      },
-    },
+
+  css:{
+    preprocessorOptions:{
+      scss:{
+        silenceDeprecations:['import','if-function','global-builtin', 'color-functions']
+      }
+    }
   },
 
-   resolve: {
-    alias: {
-      'pages': path.resolve(import.meta.dirname, 'src/Pages'),
-    },
-  }, 
-});
+  resolve:{
+    alias:{
+      'pages': path.resolve(__dirname, 'src/pages')
+    }
+  }
+})

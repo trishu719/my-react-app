@@ -3,16 +3,16 @@ import { WishlistContext } from "../context"
 import { WishlistReducer } from "../Reducers/WishlistReducer"
 
 const initialState = {
-    uesrId:1,
+    userId:1,
     wishlistItems:[],
 };
 
-export const WishlistProvider = ({ Children }) => {
+export const WishlistProvider = ({ children }) => {
     const [wishlistState, wishlistDispatch] = useReducer( WishlistReducer, initialState);
 
     return(
         <WishlistContext.Provider value={{ wishlistState, wishlistDispatch}}>
-            {Children}
+            {children}
         </WishlistContext.Provider>
     );
 };

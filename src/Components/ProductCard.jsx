@@ -10,7 +10,7 @@ export const ProductCard = ({ product }) => {
             <Card.Img variant="top" src={product.thumbnail}/>
             <Card.Body className="d-flex flex-column">
                 <Card.Title>{product.title}</Card.Title>
-                <Card.Text>{product.description}</Card.Text>
+               {/*  <Card.Text>{product.description}</Card.Text> */}
                 <div className="mt-auto d-flex gap-3">
                     <AddToWishlist product={product} />
                     <Button variant="outline-primary" size="sm">Add To Cart</Button>

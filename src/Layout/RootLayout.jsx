@@ -1,12 +1,17 @@
 import { Outlet, NavLink } from "react-router-dom";
 import React,{ useState, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaMoon, FaSun, FaHeart } from "react-icons/fa";
+import { WishlistContext } from "../ContextAPI/context";
 import Navigation from "../Components/Navigation";
 import { Badge } from "react-bootstrap";
 
 
 export const RootLayout = () => {
+
+  const { wishlistState, wishlistDispatch } = useContext(WishlistContext);
+
+  const wishlistItemsCount = wishlistState.wishlistItems.length;
 
   const [darkMode, setDarkMode] = useState(false);
   const toggleTheme = () => {
@@ -36,6 +41,17 @@ export const RootLayout = () => {
           <h3>
             React Assignment
           </h3>
+          
+          
+            <NavLink to="/wishlist" className=" text-decoration-none position-relative ms-auto" title="Wishlist" style={{marginLeft:"100px"}}>
+            <FaHeart size={20} color="red" />
+              <Badge
+              bg="danger"
+              pill
+              className="position-absolute top-0 start-100 translate-middle" style={{fontSize:"8px", gap:"20px", minWidth:"18px", height:"18px", display:"flex", alignItems:"center", justifyContent:"center"}}
+              >{wishlistItemsCount}</Badge>
+            
+            </NavLink>
           
           <button
             onClick={toggleTheme}

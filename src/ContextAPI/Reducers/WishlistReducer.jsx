@@ -4,7 +4,7 @@ export const WishlistReducer = (state, action) => {
     const { type, payload } = action
 
     switch (type) {
-        case "ADD_TO-WISHLIST":
+        case "ADD_TO_WISHLIST":
             return (
                 {
                     ...state,

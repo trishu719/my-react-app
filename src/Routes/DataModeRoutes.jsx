@@ -23,6 +23,7 @@ import RBNavTabs from '../Pages/RBNavTabs';
 import RBOverlays from '../Pages/RBOverlays';
 import { RHFormsWithoutYup } from '../Forms/RHFormsWithoutYup';
 import { RHFormsWithYup } from '../Forms/RHFormsWithYup';
+import { Products } from '../Pages/Products';
 
 
 export const router = createBrowserRouter([
@@ -52,6 +53,7 @@ export const router = createBrowserRouter([
       { path: "/rb-overlays", element: <RBOverlays /> },
       { path: "/rh-formswithoutyup", element: <RHFormsWithoutYup /> },
       { path: "/rh-formswithyup", element: <RHFormsWithYup /> },
+      { path: "/products", element: <Products /> },
     ]
   },
 ]);

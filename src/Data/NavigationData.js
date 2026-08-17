@@ -34,3 +34,8 @@ export const FormsLink = [
     
 ];
 
+export const ContextAPILink = [
+    { id: uuid(), link: "/products", menuName: "Products"},
+    
+];
+

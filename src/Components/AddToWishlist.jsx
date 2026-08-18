@@ -11,7 +11,7 @@ export const AddToWishlist = ({ product }) => {
 
     const handleAddToWishlist = () => {
         if (found) {
-            toast.error("This item is already exist in your wishlist");
+            toast.error("This item already exist in your wishlist");
         }
         else {
             wishlistDispatch({

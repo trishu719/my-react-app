@@ -25,6 +25,9 @@ import { RHFormsWithoutYup } from '../Forms/RHFormsWithoutYup';
 import { RHFormsWithYup } from '../Forms/RHFormsWithYup';
 import { Products } from '../Pages/Products';
 import { Wishlist } from '../Pages/Wishlist';
+import  {BlogListing}  from '../Pages/blog/BlogListing';
+import  {BlogDetails}  from '../Pages/blog/BlogDetails';
+import  {BlogSearchDetails}  from '../Pages/blog/BlogSearchDetails';
 
 
 export const router = createBrowserRouter([
@@ -56,6 +59,9 @@ export const router = createBrowserRouter([
       { path: "/rh-formswithyup", element: <RHFormsWithYup /> },
       { path: "/products", element: <Products /> },
       { path: "/wishlist", element: <Wishlist /> },
+      { path: "/bloglisting", element: <BlogListing /> },
+      { path: "/blog/:id", element: <BlogDetails /> },
+      { path: "/blogsearchdetails", element: <BlogSearchDetails /> },
 
     ]
   },

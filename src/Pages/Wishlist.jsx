@@ -3,7 +3,7 @@ import { Button, Col, Image, Row, Table } from 'react-bootstrap'
 import { WishlistContext } from '../ContextAPI/context'
 import { Cart, Trash } from 'react-bootstrap-icons'
 import { NavLink } from 'react-router-dom'
-import { TbHandFingerRight } from 'react-icons/tb'
+
 
 export const Wishlist = () => {
 
@@ -17,11 +17,11 @@ export const Wishlist = () => {
   return (<>{
     wishlistState?.wishlistItems?.length <= 0 ? (
       <>
-        <p className='text-danger text-center fw-medium fs-4 mt-5'>
+        <p className='text-danger text-center  fs-4 mt-5'>
           Your wishlist is empty. Please Add The Items
         </p>
         <p className='text-center mb-5'>
-          <NavLink to="/products" className="text-decoration-none fs-4 fw-bold"><TbHandFingerRight color='purple'/> Add Items</NavLink>
+          <NavLink to="/products" className="text-decoration-none fs-5 fw-bold"> Add Items</NavLink>
         </p>
       </>
     ) : (
@@ -48,7 +48,6 @@ export const Wishlist = () => {
                 <td className="ps-5 cart-product-add-cart">
                   <div className='d-flex gap-2 mt-4'>
                     <Button variant='outline-danger' onClick={() => handleRemoveFromWishlist(item)} className='d-flex justify-content-center align-items-center'><Trash /></Button>
-                    <Button variant='outline-primary' className='d-flex justify-content-center align-items-center'><Cart className='me-1' /> Move To Cart</Button>
                   </div>
                 </td>
               </tr>

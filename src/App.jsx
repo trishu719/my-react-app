@@ -1,4 +1,4 @@
-import { RouterProvider } from 'react-router-dom';
+import { BrowserRouter, createBrowserRouter, Route, Routes, RouterProvider } from 'react-router-dom';
 import { router } from './Routes/DataModeRoutes';
 import { WishlistProvider } from './ContextAPI/Providers/WishlistProvider';
 

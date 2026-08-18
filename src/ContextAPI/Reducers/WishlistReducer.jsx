@@ -9,6 +9,7 @@ export const WishlistReducer = (state, action) => {
                 {
                     ...state,
                     wishlistItems:[
+                        ...state.wishlistItems,
                         {
                             id: payload.id,
                             thumbnail:payload.thumbnail,

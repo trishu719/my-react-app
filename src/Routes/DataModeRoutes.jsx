@@ -24,6 +24,7 @@ import RBOverlays from '../Pages/RBOverlays';
 import { RHFormsWithoutYup } from '../Forms/RHFormsWithoutYup';
 import { RHFormsWithYup } from '../Forms/RHFormsWithYup';
 import { Products } from '../Pages/Products';
+import { Wishlist } from '../Pages/Wishlist';
 
 
 export const router = createBrowserRouter([
@@ -54,6 +55,8 @@ export const router = createBrowserRouter([
       { path: "/rh-formswithoutyup", element: <RHFormsWithoutYup /> },
       { path: "/rh-formswithyup", element: <RHFormsWithYup /> },
       { path: "/products", element: <Products /> },
+      { path: "/wishlist", element: <Wishlist /> },
+
     ]
   },
 ]);

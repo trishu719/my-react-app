@@ -8,11 +8,11 @@ import { ToastContainer } from "react-toastify";
 export const Products = () => {
     return (
         <div>
-            <h3 className="fw-bold">Products</h3>
-            <Row className="justify-content-center px-4 g-4" >
+            <h2 className="fw-bold ms-4">Products</h2><hr/>
+            <Row className="justify-content-center px-4" >
                 {productsData.map((product) => {
                     return (
-                        <Col key={product.id} lg={4} xs={12} md={6} >
+                        <Col key={product.id} className="mb-4" lg={4} >
                             <ProductCard product={product} />
                         </Col>
                     )
